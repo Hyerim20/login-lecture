@@ -12,4 +12,11 @@ function login(){
         passsword: password.value,
     };
     
+    fetch("/login", {
+        mothd: "POST",
+        headers: {
+            "Content-Type": "application/josn",
+        },
+        body: JSON.stringify(req)
+    });
 }
